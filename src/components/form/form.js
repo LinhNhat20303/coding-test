@@ -9,19 +9,31 @@ export default function Form() {
             <h3 className="">Profile</h3>
             <div className="form-group">
               <label className="text">Full Name:</label>
-              <input required type="email" className="form-control" />
+              <input
+                pattern="/^[a-z ,.'-]+$/i"
+                required
+                className="form-control"
+              />
             </div>
             <div className="form-group">
               <label className="text">Day of Birth:</label>
-              <input required type="email" className="form-control" />
+              <input
+                required
+                className="form-control"
+                pattern="/^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$/"
+              />
             </div>
             <div className="form-group">
               <label className="text">Email:</label>
-              <input required type="email" className="form-control" />
+              <input required type="email" a className="form-control" />
             </div>
             <div className="form-group">
               <label className="text">Phone:</label>
-              <input required type="email" className="form-control" />
+              <input
+                pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b"
+                required
+                className="form-control"
+              />
             </div>
             <div className="profile-button">
               <button type="submit" className="update-button">
