@@ -9,7 +9,7 @@ function App() {
     <div className="wrapper">
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Login />}></Route>
+          <Route path="/" element={<Login />}></Route>
           <Route path="/form" element={<Form />}></Route>
         </Routes>
       </BrowserRouter>
